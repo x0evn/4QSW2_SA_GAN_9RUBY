@@ -1,0 +1,103 @@
+<html>
+	<body>
+		<head>
+
+			<style>
+
+				body {
+			  		background-image: url(cutew.jpg);
+
+			  	}
+
+
+			  	h1 {
+  				text-align: center;
+  				font-family: "Lucida Console", "Courier New", monospace;
+  				font-size: 50px;
+  				color: lightpink;
+
+
+				}	
+
+				img {
+			 
+ 				 display: block;
+ 				 margin-left: auto;
+  				margin-right: auto;
+  				width: 30%;
+
+				}
+
+				.button {
+  				background-color: #04AA6D; /* Green */
+  				border: none;
+  				color: white;
+ 				padding: 16px 32px;
+  				text-align: center;
+  				text-decoration: none;
+  				display: inline-block;
+  				font-size: 16px;
+  				margin: 4px 2px;
+  				transition-duration: 0.4s;
+  				cursor: pointer;
+  				border-radius: 12px;
+				}
+
+
+
+
+	 </style>		
+				
+
+	<h1>Hi my name is Kirby! Try my working online calculator!</h1>
+
+
+	<img src="kirby.gif" alt="Kirby" class="center">
+	<form>
+		Enter x value: <input type="text" id="num1">
+		Enter y value: <input type="text" id="num2">
+		<button type="Submit" onclick="plus()" class="button"> Calculate </button>
+		<button type="Submit" onclick="prod()" class="button"> Product </button>
+		<button type="Submit" onclick="div()" class="button"> Divisor </button>
+		<button type="Submit" onclick="sub()" class="button"> Difference </button>
+		
+
+
+
+	</form>
+	<script>
+		function plus(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+				var sum = Number(num1) + Number(num2);
+			document.write("The sum is: " + sum);
+
+				
+		}
+
+		function prod(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+				var prodc = Number(num1) * Number(num2);
+			document.write("The product is: " + prodc);
+		}	
+
+		function div(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+				var divisor = Number(num1) / Number(num2);
+			document.write("The divisor is: " + divisor);
+		}
+
+		function sub(){
+			var num1 = document.getElementById("num1").value;
+			var num2 = document.getElementById("num2").value;
+				var sub = Number(num1) - Number(num2);
+			document.write("The difference is: " + sub);
+		}
+
+	</script>
+
+		</head>
+	<body>
+<html>
